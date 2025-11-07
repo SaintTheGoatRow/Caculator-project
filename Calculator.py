@@ -8,7 +8,7 @@ root.config(bg="black")
 root.resizable(False, False)
 
 # Output Screen Configuration 
-e = Entry(root, font=("Ariel", 16), width= 25, borderwidth= 5, justify="right")
+e = Entry(root, font=("Ariel", 15), width= 24, borderwidth= 4, justify="right")
 e.grid(row= 0, column= 0, columnspan= 4, pady= 20, ipady= 15)
 
 memory_value = 0
@@ -22,8 +22,8 @@ def button_click(number):
 def button_clear():
     e.delete(0, END)
 
-def test(x,y,z):    
-     return x+ y +z
+def test(a, b, c):    
+     return a + b + c
 
 def power():
     try:
