@@ -4,7 +4,7 @@ import math
 # Tkinter configuration
 root = Tk()
 root.title("Calculator")
-root.config(bg="green")
+root.config(bg="red")
 root.resizable(False, False)
 
 # Output Screen Configuration 
@@ -129,7 +129,7 @@ def clear_history():
     Label(history_window, text="History Cleared").pack()
 
 
-# Button configuration
+# Button set-up 
 button_memory_add = Button(root, text="M+", width=10, height=3, bg="black", fg="orange", command=memory_add)
 button_memory_subtract = Button(root, text="M-", width=10, height=3, bg="black", fg="orange", command=memory_subtract)
 button_memory_recall = Button(root, text="MR", width=10, height=3, bg="black", fg="orange", command=memory_recall)
