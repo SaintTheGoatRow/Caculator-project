@@ -4,11 +4,11 @@ import math
 # Tkinter configuration
 root = Tk()
 root.title("Calculator")
-root.config(bg="pink")
+root.config(bg="indigo")
 root.resizable(False, False)
 
 # Output Screen Configuration 
-e = Entry(root, font=("arial", 15, "bold”), width= 20, borderwidth= 6, justify="right")
+e = Entry(root, font=("arial", 15, "italic”), width= 20, borderwidth= 6, justify="right")
 e.grid(row= 0, column= 0, columnspan= 4, pady= 15, ipady= 20, padx= 10)
 
 memory_value = 0
