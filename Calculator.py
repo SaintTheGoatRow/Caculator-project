@@ -8,7 +8,7 @@ root.config(bg="indigo")
 root.resizable(False, False)
 
 # Output Screen Configuration 
-e = Entry(root, font=("arial", 15, "italic”), width= 20, borderwidth= 6, justify="right")
+e = Entry(root, font=("Ariel", 15), width= 24, borderwidth= 4, justify="right")
 e.grid(row= 0, column= 0, columnspan= 4, pady= 15, ipady= 20, padx= 10)
 
 memory_value = 0
@@ -36,7 +36,7 @@ def power():
 
 def modulus():
     try:
-        num1 = float(e.get()) hi
+        num1 = float(e.get())
         e.delete(0, END)
         e.insert(END, str(num1) + "%")
     except ValueError:
