@@ -4,7 +4,7 @@ import math
 # Tkinter configuration
 root = Tk()
 root.title("Calculator")
-root.config(bg="black")
+root.config(bg="green")
 root.resizable(False, False)
 
 # Output Screen Configuration 
