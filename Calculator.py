@@ -8,7 +8,7 @@ root.config(bg="green")
 root.resizable(False, False)
 
 # Output Screen Configuration 
-e = Entry(root, font=("Ariel", 15), width= 24, borderwidth= 4, justify="right")
+e = Entry(root, font=("CASTELLAR", 15), width= 24, borderwidth= 4, justify="right")
 e.grid(row= 0, column= 0, columnspan= 4, pady= 20, ipady= 15)
 
 memory_value = 0
@@ -36,7 +36,7 @@ def power():
 
 def modulus():
     try:
-        num1 = float(e.get())
+        num1 = float(e.get()) hi
         e.delete(0, END)
         e.insert(END, str(num1) + "%")
     except ValueError:
@@ -130,36 +130,36 @@ def clear_history():
 
 
 # Button configuration
-button_memory_add = Button(root, text="M+", width=10, height=3, bg="black", fg="green", command=memory_add)
-button_memory_subtract = Button(root, text="M-", width=10, height=3, bg="black", fg="green", command=memory_subtract)
-button_memory_recall = Button(root, text="MR", width=10, height=3, bg="black", fg="green", command=memory_recall)
-button_memory_clear = Button(root, text="MC", width=10, height=3, bg="black", fg="green", command=memory_clear)
-button_square = Button(root, text="x^2", width=10, height=3, bg="black", fg="green", command=square)
-button_square_root = Button(root, text="sqrt", width=10, height=3, bg="black", fg="green", command=square_root)
-button_history = Button(root, text="History", width=10, height=3, bg="black", fg="green", command=recall_history)
-button_clear_history = Button(root, text="Clear History", width=10, bg="black", fg="green", height=3, command=clear_history)
-button_power = Button(root, text="x^y", width=10, height=3, bg="black", fg="green", command=power)
-button_modulus = Button(root, text="%", width=10, height=3, bg="black", fg="green", command=modulus)
+button_memory_add = Button(root, text="M+", width=10, height=3, bg="black", fg="orange", command=memory_add)
+button_memory_subtract = Button(root, text="M-", width=10, height=3, bg="black", fg="orange", command=memory_subtract)
+button_memory_recall = Button(root, text="MR", width=10, height=3, bg="black", fg="orange", command=memory_recall)
+button_memory_clear = Button(root, text="MC", width=10, height=3, bg="black", fg="orange", command=memory_clear)
+button_square = Button(root, text="x^2", width=10, height=3, bg="black", fg="orange", command=square)
+button_square_root = Button(root, text="sqrt", width=10, height=3, bg="black", fg="orange", command=square_root)
+button_history = Button(root, text="History", width=10, height=3, bg="black", fg="orange", command=recall_history)
+button_clear_history = Button(root, text="Clear History", width=10, bg="black", fg="orange", height=3, command=clear_history)
+button_power = Button(root, text="x^y", width=10, height=3, bg="black", fg="orange", command=power)
+button_modulus = Button(root, text="%", width=10, height=3, bg="black", fg="orange", command=modulus)
 
-button_1 = Button(root, text="1", width=10, height=3, bg="black", fg="green", command=lambda: button_click(1))
-button_2 = Button(root, text="2", width=10, height=3, bg="black", fg="green", command=lambda: button_click(2))
-button_3 = Button(root, text="3", width=10, height=3, bg="black", fg="green", command=lambda: button_click(3))
-button_4 = Button(root, text="4", width=10, height=3, bg="black", fg="green", command=lambda: button_click(4))
-button_5 = Button(root, text="5", width=10, height=3, bg="black", fg="green", command=lambda: button_click(5))
-button_6 = Button(root, text="6", width=10, height=3, bg="black", fg="green", command=lambda: button_click(6))
-button_7 = Button(root, text="7", width=10, height=3, bg="black", fg="green", command=lambda: button_click(7))
-button_8 = Button(root, text="8", width=10, height=3, bg="black", fg="green", command=lambda: button_click(8))
-button_9 = Button(root, text="9", width=10, height=3, bg="black", fg="green", command=lambda: button_click(9))
-button_0 = Button(root, text="0", width=10, height=3, bg="black", fg="green", command=lambda: button_click(0))
-button_add = Button(root, text="+", width=10, height=3, bg="black", fg="green", command=lambda: button_click("+"))
-button_subtract = Button(root, text="-", width=10, height=3, bg="black", fg="green", command=lambda: button_click("-"))
-button_multiply = Button(root, text="*", width=10, height=3, bg="black", fg="green", command=lambda: button_click("*"))
-button_divide = Button(root, text="/", width=10, height=3, bg="black", fg="green", command=lambda: button_click("/"))
-button_equal = Button(root, text="=", width=10, height=3, bg="black", fg="green", command=button_equal)
-button_modulus = Button(root, text="%", width=10, height=3, bg="black", fg="green", command=lambda: button_click("%"))
-button_clear = Button(root, text="C", width=10, height=3, bg="black", fg="green", command=button_clear)
-button_backspace = Button(root, text="Backspace", width=10, bg="black", fg="green", height=3, command=button_backspace)
-button_decimal_place= Button(root, text=".", width=10, bg="black", fg="green", height=3, command=lambda: button_click("."))
+button_1 = Button(root, text="1", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(1))
+button_2 = Button(root, text="2", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(2))
+button_3 = Button(root, text="3", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(3))
+button_4 = Button(root, text="4", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(4))
+button_5 = Button(root, text="5", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(5))
+button_6 = Button(root, text="6", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(6))
+button_7 = Button(root, text="7", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(7))
+button_8 = Button(root, text="8", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(8))
+button_9 = Button(root, text="9", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(9))
+button_0 = Button(root, text="0", width=10, height=3, bg="black", fg="orange", command=lambda: button_click(0))
+button_add = Button(root, text="+", width=10, height=3, bg="black", fg="orange", command=lambda: button_click("+"))
+button_subtract = Button(root, text="-", width=10, height=3, bg="black", fg="orange", command=lambda: button_click("-"))
+button_multiply = Button(root, text="*", width=10, height=3, bg="black", fg="orange", command=lambda: button_click("*"))
+button_divide = Button(root, text="/", width=10, height=3, bg="black", fg="orange", command=lambda: button_click("/"))
+button_equal = Button(root, text="=", width=10, height=3, bg="black", fg="orange", command=button_equal)
+button_modulus = Button(root, text="%", width=10, height=3, bg="black", fg="orange", command=lambda: button_click("%"))
+button_clear = Button(root, text="C", width=10, height=3, bg="black", fg="orange", command=button_clear)
+button_backspace = Button(root, text="Backspace", width=10, bg="black", fg="orange", height=3, command=button_backspace)
+button_decimal_place= Button(root, text=".", width=10, bg="black", fg="orange", height=3, command=lambda: button_click("."))
 
 
 #Button alignment on the calculator.
