@@ -112,7 +112,16 @@ def square_root():
     except ValueError:
         e.delete(0, END)
         e.insert(END, "Error")
-
+        
+def cube_root():
+    try:
+        result = math.cbrt(float(e.get()))
+        e.delete(0,END)
+        e.insert(END,str(result))
+    except ValueError:
+        e.delete(0,END)
+        e.insert(END,"Error")
+        
 def recall_history():
     e.history_window = Tk()
     e.history_window.title("Calculation History")
@@ -136,6 +145,7 @@ button_memory_recall = Button(root, text="MR", width=10, height=3, bg="black", f
 button_memory_clear = Button(root, text="MC", width=10, height=3, bg="black", fg="orange", command=memory_clear)
 button_square = Button(root, text="x^2", width=10, height=3, bg="black", fg="orange", command=square)
 button_square_root = Button(root, text="sqrt", width=10, height=3, bg="black", fg="orange", command=square_root)
+button_cube_root = Button(root,text="³√",width=5, height=3, bg="black", fg="orange", command=cube_root)
 button_history = Button(root, text="History", width=10, height=3, bg="black", fg="orange", command=recall_history)
 button_clear_history = Button(root, text="Clear History", width=10, bg="black", fg="orange", height=3, command=clear_history)
 button_power = Button(root, text="x^y", width=10, height=3, bg="black", fg="orange", command=power)
@@ -196,6 +206,7 @@ button_history.grid(row=2, column=2)
 button_clear_history.grid(row=2, column=3)
 
 button_power.grid(row=7, column=3)
+button_cube_root.grid(row=9, column=0)
 button_modulus.grid(row=8, column=0, columnspan=1)
 button_decimal_place.grid(row=8, column=1, columnspan=1)
 sumofthree=test(1,4,7)
