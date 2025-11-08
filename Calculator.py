@@ -22,7 +22,7 @@ def button_click(number):
 def button_clear():
     e.delete(0, END)
 
-def test(a, b, c):    
+def test(a, b, c):    y
      return a + b + c
 
 def power():
@@ -60,7 +60,7 @@ def button_equal():
     except Exception as ex:
         e.delete(0, END)
         e.insert(END, "Error")
-
+#defining backspace
 def button_backspace():
     current = e.get()
     e.delete(0, END)
