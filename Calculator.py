@@ -3,12 +3,12 @@ import math
 
 # Tkinter configuration
 root = Tk()
-root.title("Calculator")
-root.config(bg="indigo")
+root.title("Modern Calculator")
+root.config(bg="#2E0854")
 root.resizable(False, False)
 
 # Output Screen Configuration 
-e = Entry(root, font=("Ariel", 15), width= 24, borderwidth= 4, justify="right")
+e = Entry(root, font=("Helvetica", 18, "bold"), width= 22, borderwidth= 5, justify="right", bg="#E6E6FA", fg="#000000")
 e.grid(row= 0, column= 0, columnspan= 4, pady= 15, ipady= 20, padx= 10)
 
 memory_value = 0
