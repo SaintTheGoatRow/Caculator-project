@@ -184,9 +184,9 @@ button_decimal_place= Button(root, text=".", width=10, bg="black", fg="orange", 
 
 
 #Button alignment on the calculator.
-button_7.grid(row=6, column=0)
-button_8.grid(row=6, column=1)
-button_9.grid(row=6, column=2)
+button_7.grid(row=7, column=0)
+button_8.grid(row=7, column=1)
+button_9.grid(row=7 column=2)
 button_divide.grid(row=6, column=3)
 
 button_4.grid(row=5, column=0)
