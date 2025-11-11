@@ -14,7 +14,10 @@ e.grid(row= 0, column= 0, columnspan= 4, pady= 15, ipady= 20, padx= 10)
 memory_value = 0
 calculation_history = []
 
-
+   col += 1
+    if col > 3:
+        col = 0
+        row += 1
 # Button Functions and Math Operations 
 def button_click(number):
     e.insert(END, str(number))
